@@ -53,7 +53,7 @@
 .nav-bar {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 80px;
 }
 
 .nav-bar a {
