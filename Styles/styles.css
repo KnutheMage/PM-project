@@ -66,3 +66,32 @@
     text-decoration: none;
     border: 2px solid var(--text-color);
 }
+
+/* FOOTER */
+.main-footer {
+    background-color: #258BBE;
+    color: var(--text-color);
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.footer-section p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--text-color);
+}
