@@ -1,0 +1,30 @@
+.math-image img {
+    max-width: 1201px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolonner */
+    row-gap: 30px; /* Avstand mellom bildene */
+    column-gap: 275px;
+    max-width: 1201px; /* Matcher Mathchild-bildet */
+    margin: 40px auto; /* Midtstiller hele gridet */
+}
+
+.grid-item img {
+    width: 450px;
+    height: 241px;
+    object-fit: cover; 
+    display: block;
+    border-radius: 10px;
+    border: 3px solid #0A1A2F;
+    transition: transform 0.2s ease;
+}
+
+
+.grid-item img:hover {
+    transform: scale(1.03); /* Liten hover-effekt */
+}
