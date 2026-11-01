@@ -1,0 +1,41 @@
+.science-shows {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.science-shows h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #0A1A2F;
+    margin-bottom: 40px;
+}
+
+.show-section {
+    max-width: 1300px;
+    margin: 0 auto 60px auto;
+}
+
+.show-section img {
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.show-text {
+    max-width: 1300px;
+    margin: 20px auto 0 auto;
+}
+
+.show-text h2 {
+    font-size: 36px;
+    color: #0A1A2F;
+    margin-bottom: 20px;
+}
+
+.show-text {
+    max-width: 1000px;
+    margin: 20px auto 0 auto;
+}
