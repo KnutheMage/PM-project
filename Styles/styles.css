@@ -1,3 +1,19 @@
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+p,
+a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
 /* Farger */
 :root {
     --header-bg: #2A6EB8;
