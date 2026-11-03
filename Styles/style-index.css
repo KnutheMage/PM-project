@@ -1,30 +1,64 @@
+/* Mathchild-bildet */
 .math-image img {
-    max-width: 1201px;
     width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
+
+/* Grid - Mobil først */
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 kolonner */
-    row-gap: 30px; /* Avstand mellom bildene */
-    column-gap: 275px;
-    max-width: 1201px; /* Matcher Mathchild-bildet */
-    margin: 40px auto; /* Midtstiller hele gridet */
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    margin: 30px auto;
+    width: 100%;
 }
 
+/* Bilder i gridet */
 .grid-item img {
-    width: 450px;
-    height: 241px;
-    object-fit: cover; 
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    aspect-ratio: 450 / 241;
+    object-fit: cover;
     display: block;
+    margin: 0 auto;
     border-radius: 10px;
     border: 3px solid #0A1A2F;
     transition: transform 0.2s ease;
 }
 
-
 .grid-item img:hover {
-    transform: scale(1.03); /* Liten hover-effekt */
+    transform: scale(1.03);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+
+    .math-image img {
+        max-width: 1201px;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+        row-gap: 30px;
+        max-width: 1000px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+
+    .image-grid {
+        max-width: 1201px;
+        column-gap: 275px;
+        row-gap: 30px;
+    }
+
+    .grid-item img {
+        width: 450px;
+        height: 241px;
+    }
 }
