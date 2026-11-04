@@ -47,31 +47,7 @@ a {
     font-size: 24px;
     font-weight: 700;
 }
-@media (max-width: 768px) {
 
-    .top-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .logo {
-        margin-right: auto;
-    }
-
-    .logo img {
-        width: 70px;
-        height: auto;
-    }
-
-    .main-header h1 {
-        display: none;
-    }
-
-    .visit-btn {
-        display: none;
-    }
-}
 
 /* H1 */
 .main-header h1 {
@@ -79,7 +55,9 @@ a {
     font-weight: 800;
     margin: 0;
 }
-
+h1 {
+    text-align: center;
+}
 /* Visit us-knapp */
 .visit-btn {
     background-color: #D9090D;
