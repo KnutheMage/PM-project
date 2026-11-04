@@ -11,34 +11,6 @@
     color: #0A1A2F;
 }
 
-
-.hero-section {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.hero-section img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
-.hero-text {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-shadow: 2px 2px 5px black;
-    text-align: center;
-    padding: 20px;
-}
-
-
 .fun-facts-box {
     width: 100%;
     background: #4FA9FF;
@@ -48,7 +20,6 @@
     margin-bottom: 30px;
 }
 
-
 .three-column-box {
     width: 100%;
     background: #4FA9FF;
@@ -57,7 +28,6 @@
     box-sizing: border-box;
     margin-bottom: 30px;
 }
-
 
 .column-layout {
     display: grid;
@@ -84,6 +54,7 @@ h2 {
     color: #0A1A2F;
 }
 
+/* Tablet */
 
 @media (min-width: 768px) {
 
@@ -91,29 +62,17 @@ h2 {
         font-size: 48px;
     }
 
-    .hero-text {
-        font-size: 30px;
-    }
-
     .column-layout {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
+/* Desktop */
 
 @media (min-width: 1200px) {
 
     .kids-corner {
         max-width: 1380px;
-    }
-
-    .hero-section img {
-        max-width: 1380px;
-        height: 260px;
-    }
-
-    .hero-text {
-        font-size: 36px;
     }
 
     .fun-facts-box {
