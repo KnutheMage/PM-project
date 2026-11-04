@@ -16,8 +16,8 @@ a {
 
 /* Farger */
 :root {
-    --header-bg: #2A6EB8;
-    --pill-bg: #E9C23A;
+    --header-bg: #9AC4EA;
+    --pill-bg: #F7E8A4;
     --text-color: #0A1A2F;
 }
 
@@ -37,11 +37,40 @@ a {
     justify-content: space-between;
     align-items: center;
 }
-
+.logo img {
+    width: 80px;
+    height: 80px;
+    display: block;
+}
 /* Logo */
 .logo {
     font-size: 24px;
     font-weight: 700;
+}
+@media (max-width: 768px) {
+
+    .top-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+
+    .logo img {
+        width: 70px;
+        height: auto;
+    }
+
+    .main-header h1 {
+        display: none;
+    }
+
+    .visit-btn {
+        display: none;
+    }
 }
 
 /* H1 */
@@ -149,7 +178,7 @@ a {
 
 /* FOOTER */
 .main-footer {
-    background-color: #2A6EB8;
+    background-color: #9AC4EA;
     color: var(--text-color);
     padding: 40px;
     display: flex;

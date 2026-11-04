@@ -1,29 +1,33 @@
+/* Mobil først */
+
 .journey-section {
-    max-width: 1200px;
-    margin: 50px auto;
+    width: 100%;
+    margin: 30px auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .journey-section h1 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: #0A1A2F;
 }
 
 .journey-grid {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .left-column,
 .right-column {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 
 .info-card {
+    width: 100%;
     background-color: #4FA9FF;
     color: #0A1A2F;
     padding: 25px;
@@ -32,34 +36,93 @@
     box-sizing: border-box;
 }
 
-.small-card {
-    width: 445px;
-    height: 241px;
-}
+/* Mobil = automatisk høyde */
 
-.contact-card {
-    width: 445px;
-    height: 323px;
-}
-
-.accessibility-card {
-    width: 445px;
-    height: 484px;
-}
-
+.small-card,
+.contact-card,
+.accessibility-card,
 .facilities-card {
-    width: 445px;
-    height: 620px;
+    width: 100%;
+    height: auto;
 }
 
 .info-card h2 {
     margin-top: 0;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
+    text-align: center;
 }
 
 .info-card p {
-    font-size: 20px;
-    line-height: 1.1;
+    font-size: 18px;
+    line-height: 1.2;
     margin: 4px 0;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+    .journey-grid {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .left-column,
+    .right-column {
+        flex: 1;
+    }
+
+    .info-card h2 {
+        font-size: 30px;
+    }
+
+    .info-card p {
+        font-size: 19px;
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+
+    .journey-section {
+        max-width: 1200px;
+        margin: 50px auto;
+    }
+
+    .journey-grid {
+        gap: 40px;
+    }
+
+    .small-card {
+        width: 445px;
+        height: 241px;
+    }
+
+    .contact-card {
+        width: 445px;
+        height: 323px;
+    }
+
+    .accessibility-card {
+        width: 445px;
+        height: 484px;
+    }
+
+    .facilities-card {
+        width: 445px;
+        height: 620px;
+    }
+
+    .info-card h2 {
+        font-size: 32px;
+    }
+
+    .info-card p {
+        font-size: 20px;
+        line-height: 1.1;
+    }
 }

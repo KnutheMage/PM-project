@@ -1,19 +1,22 @@
+/* Mobil først */
+
 .science-shows {
-    max-width: 1300px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .science-shows h1 {
     text-align: center;
-    font-size: 48px;
+    font-size: 36px;
     color: #0A1A2F;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .show-section {
-    max-width: 1300px;
-    margin: 0 auto 60px auto;
+    width: 100%;
+    margin: 0 auto 50px auto;
 }
 
 .show-section img {
@@ -25,17 +28,74 @@
 }
 
 .show-text {
-    max-width: 1300px;
+    width: 100%;
+    max-width: 1000px;
     margin: 20px auto 0 auto;
 }
 
 .show-text h2 {
-    font-size: 36px;
+    font-size: 28px;
     color: #0A1A2F;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
-.show-text {
-    max-width: 1000px;
-    margin: 20px auto 0 auto;
+.show-text p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+    .science-shows h1 {
+        font-size: 42px;
+    }
+
+    .show-text h2 {
+        font-size: 32px;
+    }
+
+    .show-text p {
+        font-size: 24px;
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+
+    .science-shows {
+        max-width: 1300px;
+    }
+
+    .science-shows h1 {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+
+    .show-section {
+        max-width: 1300px;
+        margin: 0 auto 60px auto;
+    }
+
+    .show-section img {
+        max-width: 1000px;
+    }
+
+    .show-text {
+        max-width: 1000px;
+        margin: 20px auto 0 auto;
+    }
+
+    .show-text h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .show-text p {
+        font-size: 36px;
+        line-height: 1.4;
+    }
 }

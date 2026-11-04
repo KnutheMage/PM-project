@@ -1,4 +1,4 @@
-/* Mathchild-bildet */
+
 .math-image img {
     width: 100%;
     height: auto;
@@ -6,7 +6,6 @@
     margin: 0 auto;
 }
 
-/* Grid - Mobil først */
 .image-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -15,7 +14,6 @@
     width: 100%;
 }
 
-/* Bilder i gridet */
 .grid-item img {
     width: 100%;
     max-width: 450px;
@@ -33,7 +31,6 @@
     transform: scale(1.03);
 }
 
-/* Tablet */
 @media (min-width: 768px) {
 
     .math-image img {
@@ -48,7 +45,6 @@
     }
 }
 
-/* Desktop */
 @media (min-width: 1200px) {
 
     .image-grid {
