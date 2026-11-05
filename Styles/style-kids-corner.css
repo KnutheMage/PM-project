@@ -97,3 +97,18 @@ h2 {
         font-size: 20px;
     }
 }
+.scientist-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 12px;
+}
+
+@media (min-width: 1200px) {
+
+    .scientist-image {
+        max-width: 300px;
+    }
+}
