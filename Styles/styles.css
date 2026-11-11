@@ -61,7 +61,7 @@ h1 {
 /* Visit us-knapp */
 .visit-btn {
     background-color: #D9090D;
-    color: var(--text-color);
+    color: FFF8E7(--text-color);
     padding: 12px 25px;
     border-radius: 50px;
     font-weight: 600;
