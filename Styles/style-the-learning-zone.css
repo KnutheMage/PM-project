@@ -116,3 +116,26 @@
         max-width: 550px;
     }
 }
+
+.hero-text-learning-zone {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #0A1A2F;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+
+    text-align: center;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .hero-text-learning-zone {
+        font-size: 48px;
+    }
+}
